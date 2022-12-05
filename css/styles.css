@@ -16,14 +16,23 @@
     --secondary-accent-color: #E7E9FC;
 }
 
-/* 
-* {
-    margin: 0 auto;
+
+*,
+*::after,
+*::before {
+    /*box model*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-*/
+
+
 
 body {
+    /* visual */
     background-color: var(--primary-color);
+
+    /* typography */
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     font-size: 16px;
@@ -31,11 +40,21 @@ body {
     letter-spacing: 0.02em;
 }
 
+.container {
+    /* box model */
+    max-width: 1158px;
+    margin: 0 auto;
+}
+
+.grey {
+    background-color: var(--secondary-text-color);
+}
 
 
-/* logo style */
+/* ------------------ logo style ------------------ */
 
 .logo {
+    /* typography */
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 800;
@@ -55,7 +74,7 @@ body {
 
 
 
-/* link */
+/* ------------------ links ------------------ */
 
 .link {
     text-decoration: none;
@@ -68,10 +87,11 @@ body {
 }
 
 .nav-link {
-    color: var(--secondary-color);
+    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
+    color: var(--secondary-color);
 }
 
 .nav-link:hover,
@@ -87,11 +107,11 @@ body {
 
 
 
-/* headers */
+/* ------------------ headers ------------------ */
 
 .header {
-    color: var(--secondary-color);
     font-weight: 500;
+    color: var(--secondary-color);
     
 }
 
@@ -119,27 +139,33 @@ body {
 
 
 
-/* nav menu */
+/* ------------------ nav menu ------------------ */
 
-.navigation,
+.navigation-wrapper {
+    border-bottom: 1px solid #000000;
+}
+
+
+
 .list {
     list-style-type: none;
 }
 
 
 
-/* hero section */
+/* ------------------ hero section ------------------ */
 
 .hero {
-    background-color: var(--secondary-color);
     text-align: center;
+
+    background-color: var(--secondary-color);
 }
 
 .hero.header {
-    color: var(--primary-color);
     font-weight: 500;
     font-size: 56px;
     line-height: 1.07;
+    color: var(--primary-color);
 }
 
 
@@ -147,24 +173,22 @@ body {
 /* content section */
 
 .section-header {
-    color: var(--secondary-color);
     font-weight: 500;
     font-size: 36px;
     line-height: 1.11;   
+    color: var(--secondary-color);
     text-align: center;
 }
 
-.content-block.grey {
-    background-color: var(--secondary-text-color);
-}
 
 
 
-/* list classes */
+/* ------------------ list classes ------------------ */
 
 .list.team{
-    background-color: var(--primary-color);
     text-align: center;
+
+    background-color: var(--primary-color);
 }
 
 .team-list {
@@ -177,67 +201,74 @@ body {
 
 
 
-/* portfolio gallery */
+/* ------------------ portfolio gallery ------------------ */
 
 .portfolio-item {
-    text-decoration: none;
     color: var(--text-color);
+    text-decoration: none;
 }
 
 
 
-/* buttons */
+/* ------------------ buttons ------------------ */
 
 .order-button {
-    cursor: pointer;
-    background-color: var(--accent-color);
-    color: var(--primary-color);
-    border-style: none;
-    border-radius: 4px;
     width: 170px;
     height: 51px;
+
     font-family: inherit; /*important*/
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.04em;
+    color: var(--primary-color);
     
+    background-color: var(--accent-color); 
+    border-style: none;
+    border-radius: 4px;
+    
+    cursor: pointer;
 }
 
 .order-button:hover,
 .order-button:focus {
-    background-color: var(--accent-color);
     color: var(--primary-color);
+
+    background-color: var(--accent-color);
 }
 
 .order-button:active {
     background-color: #404BBF;
 }
 
-.filter-button {
-    color: var(--accent-color);
-    background-color: var(--secondary-text-color);
-    border: 1px solid var(--secondary-accent-color);
-    border-radius: 4px;
-    cursor: pointer;
+.filter-button { 
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.28;
+    color: var(--accent-color);
+    
+    background-color: var(--secondary-text-color);
+    border: 1px solid var(--secondary-accent-color);
+    border-radius: 4px;
+
+    cursor: pointer;
 }
 
 .filter-button:hover,
 .filter-button:focus {
     color: var(--secondary-text-color);
+
     background-color: var(--accent-color);
     border: 1px solid var(--accent-color);
 }
 
 
 
-/* footer */
+/* ------------------ footer ------------------ */
 
 .footer {
-    background-color: var(--secondary-color);
     color: var(--secondary-accent-color);
+
+    background-color: var(--secondary-color);
 }
