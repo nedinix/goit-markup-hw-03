@@ -34,7 +34,6 @@ body {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-
     background-color: var(--primary-color);
 }
 
@@ -139,9 +138,7 @@ body {
 
 /* ------------------ nav menu ------------------ */
 
-.nav-wrapper {
-    /* drop-shadow */
-}
+/* .nav-wrapper { drop-shadow } */
 
 .nav-block {
     display: flex;
@@ -199,25 +196,20 @@ body {
 .content.list {
     display: flex;
     justify-content: space-between;
+    column-gap: 24px;
 }
 
-.content-box {
-    margin: 0 24px 0 0;
-}
+/* .content-box {} */
 
-.content-box:last-child {
-    margin: 0;
-}
-
-.content-block.features {
+.section.features {
     padding: 120px 0;
 }
 
-.content-block.pictures {
+.section.pictures {
     padding-bottom: 120px;
 }
 
-.content-block.grey {
+.section.grey {
     margin: 0;
     padding: 120px 0;
 }
@@ -263,10 +255,12 @@ body {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    row-gap: 48px;
+    column-gap: 24px;
 }
 
 .portfolio.list-box {
-    margin-bottom: 48px;
+    /* margin-bottom: 48px; */
     border: 0.5px solid var(--secondary-text-color);
 }
 
@@ -281,6 +275,10 @@ body {
 
 .header.portfolio {
     margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
 
 .filter-btn-wrapper {
