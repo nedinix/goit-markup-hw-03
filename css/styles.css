@@ -83,7 +83,6 @@ body {
 }
 
 .nav-link {
-    
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -118,6 +117,7 @@ body {
 }
 
 .list.header {
+    margin-bottom: 8px;
     font-size: 20px;
     line-height: 1.2;
 }
@@ -144,6 +144,19 @@ body {
 .nav-block {
     display: flex;
     justify-content: space-between;
+    padding: 24px 0;
+}
+
+.logo-wrapper {
+    margin-right: 77px;
+}
+
+.nav-item {
+    margin-right: 40px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
 }
 
 .nav-menu,
@@ -154,13 +167,14 @@ body {
 
 /* ------------------ hero section ------------------ */
 
-.hero {
+.hero-wrapper {
+    padding: 192px 0;
     text-align: center;
-
     background-color: var(--secondary-color);
 }
 
 .hero.header {
+    margin-bottom: 48px;
     font-weight: 500;
     font-size: 56px;
     line-height: 1.07;
@@ -172,6 +186,7 @@ body {
 /* -----------------content section ----------------- */
 
 .section-header {
+    margin-bottom: 72px;
     font-weight: 500;
     font-size: 36px;
     line-height: 1.11;   
@@ -182,6 +197,27 @@ body {
 .content.list {
     display: flex;
     justify-content: space-between;
+}
+
+.content-box {
+    padding: 0 12px;
+}
+
+.content-box:first-child {
+    padding: 0 12px 0 0;
+}
+
+.content-box:last-child {
+    padding: 0 0 12px;
+}
+
+.content-block {
+    margin: 120px 0;
+}
+
+.content-block.grey {
+    margin: 0;
+    padding: 120px 0;
 }
 
 
@@ -199,6 +235,10 @@ body {
 
 .team-list {
     text-align: center;
+}
+
+.team-list-description {
+    padding: 32px 16px;
 }
 
 .list-box {
@@ -293,7 +333,12 @@ body {
 /* ------------------ footer ------------------ */
 
 .footer {
+    padding: 100px 0;
     color: var(--secondary-accent-color);
-
     background-color: var(--secondary-color);
+}
+
+.footer-text {
+    margin-top: 16px;
+    max-width: 264px;
 }
