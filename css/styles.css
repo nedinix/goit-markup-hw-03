@@ -43,6 +43,10 @@ body {
 	background-color: var(--secondary-text-color);
 }
 
+.block {
+	display: block;
+}
+
 /* ------------------ logo style ------------------ */
 
 .logo {
@@ -76,10 +80,17 @@ body {
 }
 
 .nav-link {
-	font-weight: 500;
 	font-size: 16px;
+	font-weight: 500;
 	line-height: 1.5;
 	color: var(--secondary-color);
+}
+
+.nav-link,
+.contact.link,
+.logo.header {
+	display: block;
+	padding: 24px 0;
 }
 
 .nav-link:hover,
@@ -132,7 +143,6 @@ body {
 .nav-block {
 	display: flex;
 	justify-content: space-between;
-	padding: 24px 0;
 }
 
 .logo-wrapper {
@@ -140,6 +150,7 @@ body {
 }
 
 .nav-item {
+	/* padding: 24px 0; */
 	margin-right: 40px;
 }
 
@@ -231,7 +242,7 @@ body {
 /* ------------------ portfolio gallery ------------------ */
 
 .portfolio-wrapper {
-	padding: 18px 0 120px;
+	padding: 96px 0 120px;
 }
 
 .portfolio.list {
@@ -245,8 +256,6 @@ body {
 /* .portfolio.list-box {} */
 
 .portfolio-item {
-	display: flex;
-	flex-direction: column;
 	color: var(--text-color);
 	text-decoration: none;
 }
@@ -254,6 +263,7 @@ body {
 .portfolio-item-description {
 	padding: 32px 16px;
 	border: 0.5px solid var(--secondary-text-color);
+	border-top: none;
 }
 
 .header.portfolio {
@@ -265,7 +275,7 @@ body {
 }
 
 .filter-btn-wrapper {
-	margin: 78px 0;
+	margin-bottom: 78px;
 	text-align: center;
 }
 
