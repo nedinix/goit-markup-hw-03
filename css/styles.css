@@ -242,11 +242,11 @@ body {
 	column-gap: 24px;
 }
 
-.portfolio.list-box {
-	/* margin-bottom: 48px; */
-}
+/* .portfolio.list-box {} */
 
 .portfolio-item {
+	display: flex;
+	flex-direction: column;
 	color: var(--text-color);
 	text-decoration: none;
 }
