@@ -105,7 +105,9 @@ body {
 /* ------------------ headers ------------------ */
 
 .header {
+    font-size: 20px;
     font-weight: 500;
+    line-height: 1.2;
     color: var(--secondary-color);
     
 }
@@ -200,19 +202,19 @@ body {
 }
 
 .content-box {
-    padding: 0 12px;
-}
-
-.content-box:first-child {
-    padding: 0 12px 0 0;
+    margin: 0 24px 0 0;
 }
 
 .content-box:last-child {
-    padding: 0 0 12px;
+    margin: 0;
 }
 
-.content-block {
-    margin: 120px 0;
+.content-block.features {
+    padding: 120px 0;
+}
+
+.content-block.pictures {
+    padding-bottom: 120px;
 }
 
 .content-block.grey {
@@ -253,24 +255,46 @@ body {
 
 /* ------------------ portfolio gallery ------------------ */
 
+.portfolio-wrapper {
+    padding: 18px 0 120px;
+}
+
 .portfolio.list {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
 
+.portfolio.list-box {
+    margin-bottom: 48px;
+    border: 0.5px solid var(--secondary-text-color);
+}
 
 .portfolio-item {
     color: var(--text-color);
     text-decoration: none;
 }
 
+.portfolio-item-description {
+    padding: 32px 16px;
+}
+
+.header.portfolio {
+    margin-bottom: 8px;
+}
+
 .filter-btn-wrapper {
-    /* box model */
+    margin: 78px 0;
+    text-align: center;
 }
 
 .filter-btn-item {
     display: inline;
+    margin-right: 24px;
+}
+
+.filter-btn-item:last-child {
+    margin-right: 0;
 }
 
 
@@ -278,20 +302,19 @@ body {
 /* ------------------ buttons ------------------ */
 
 .order-button {
+    display: block;
+    margin: 0 auto;
     width: 170px;
     height: 51px;
-
     font-family: inherit; /*important*/
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     letter-spacing: 0.04em;
     color: var(--primary-color);
-    
     background-color: var(--accent-color); 
     border-style: none;
     border-radius: 4px;
-    
     cursor: pointer;
 }
 
@@ -307,6 +330,7 @@ body {
 }
 
 .filter-button { 
+    padding: 16px 32px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
