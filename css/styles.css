@@ -21,27 +21,24 @@
 *::after,
 *::before {
     /*box model*/
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
 
 body {
-    /* visual */
-    background-color: var(--primary-color);
-
-    /* typography */
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    background-color: var(--primary-color);
 }
 
 .container {
-    /* box model */
     max-width: 1158px;
     margin: 0 auto;
 }
@@ -54,7 +51,6 @@ body {
 /* ------------------ logo style ------------------ */
 
 .logo {
-    /* typography */
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 800;
@@ -141,16 +137,19 @@ body {
 
 /* ------------------ nav menu ------------------ */
 
-.navigation-wrapper {
-    border-bottom: 1px solid #000000;
+.nav-wrapper {
+    /* drop-shadow */
 }
 
-
-
-.list {
-    list-style-type: none;
+.nav-block {
+    display: flex;
+    justify-content: space-between;
 }
 
+.nav-menu,
+.nav-item {
+    display: inline-block;
+}
 
 
 /* ------------------ hero section ------------------ */
@@ -170,7 +169,7 @@ body {
 
 
 
-/* content section */
+/* -----------------content section ----------------- */
 
 .section-header {
     font-weight: 500;
@@ -180,10 +179,17 @@ body {
     text-align: center;
 }
 
-
+.content.list {
+    display: flex;
+    justify-content: space-between;
+}
 
 
 /* ------------------ list classes ------------------ */
+
+.list {
+    list-style-type: none;
+}
 
 .list.team{
     text-align: center;
@@ -200,12 +206,31 @@ body {
 }
 
 
+.team-list {
+    border-radius: 0 0 4px 4px;
+}
+
 
 /* ------------------ portfolio gallery ------------------ */
+
+.portfolio.list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 
 .portfolio-item {
     color: var(--text-color);
     text-decoration: none;
+}
+
+.filter-btn-wrapper {
+    /* box model */
+}
+
+.filter-btn-item {
+    display: inline;
 }
 
 
